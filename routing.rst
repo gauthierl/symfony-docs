@@ -1383,7 +1383,7 @@ A possible solution is to change the parameter requirements to be more permissiv
         class DefaultController extends AbstractController
         {
             /**
-             * @Route("/share/{token}", name="share", requirements={"token"=".+"})
+             * @Route("/share/{token}", name="share", requirements={"token": ".+"})
              */
             public function share($token): Response
             {
